@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>capital of countries</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+   
+    </style>
+      <script language="javascript">
+        function capital()
+        {
+          var count=document.forms["frm1"].country.value;
+          var capital="";
+
+          if (count=="india")
+          {
+            window.open('https://www.practo.com/mysore/cardiologist', 'newwindow');
+          }
+          if (count=="china")
+          {
+            window.open('https://www.practo.com/mysore/dermatologist', 'newwindow');
+          }
+          if (count=="pakistan")
+          {
+            window.open('https://www.practo.com/mysore/gastroenterologist', 'newwindow');
+          }
+          if (count=="bangladesh")
+          {
+            window.open('https://www.justdial.com/Mysore/Nephrologists/nct-10336578', 'newwindow');
+          }
+          if (count=="japan")
+          {
+            window.open('https://www.practo.com/mysore/neurologist', 'newwindow');
+          }
+          if (count=="america")
+          {
+            window.open('https://www.practo.com/mysore/gynecologist', 'newwindow');
+          }
+          if (count=="australia")
+          {
+            window.open('https://www.justdial.com/Mysore/Ophthalmologists/nct-10343851', 'newwindow');
+          }
+          if (count=="uganda")
+          {
+            window.open('https://www.practo.com/mysore/pediatrician', 'newwindow');
+          }
+          if (count=="plastic")
+          {
+            window.open('https://www.practo.com/mysore/plastic-surgeon', 'newwindow');
+          }
+          if (count=="pulmo")
+          {
+            window.open('https://www.practo.com/mysore/pulmonologist', 'newwindow');
+          }
+          if (count=="radio")
+          {
+            window.open('https://www.practo.com/mysore/radiologist', 'newwindow');
+          }
+          if (count=="uria")
+          {
+            window.open('https://www.practo.com/mysore/urologist', 'newwindow');
+          }
+          if (count=="select")
+          {
+            capital="Please select any country";
+          }
+          document.getElementById("capt").innerHTML=capital;
+        }
+        </script>
+  </head>
+  <body>
+    <center>
+    <h3>Personal Imformation</h3>
+    </center>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">INDIA</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">AUSTRALIA</option>
+      <option value="uae">UAE</option>
+      <option value="dubai">DUBAI</option>
+      <option value="china">CHINA</option>
+      <option value="russia">RUSSIA</option>
+      <option value="japan">JAPAN</option>
+    </select>
+
+    <label for="subject">Any specific reason to be mentioned</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  </form>
+</div>
+
+    <form name="frm1">
+      <br>
+      <center><strong>
+        Select perticular Catogory</strong>
+        <select name="country" onchange="capital()">
+          <option value="select">--SELECT--</option>
+          <option value="india">Cardiologists</option>
+          <option value="china">Dermatologists</option>
+          <option value="pakistan">Gastroenterologists</option>
+          <option value="bangladesh">Nephrologists</option>
+          <option value="japan">Neurologists</option>
+          <option value="america">Gynecologists</option>
+          <option value="australia">Ophthalmologists</option>
+          <option value="uganda">Pediatricians</option>
+          <option value="plastic">Plastic Surgeons</option>
+          <option value="pulmo">Pulmonologists</option>
+          <option value="radio">Radiologists</option>
+          <option value="uria">Urologists</option>
+          </select>
+        <br><br>
+        </center>
+        </form>
+  </body>
+</html>
